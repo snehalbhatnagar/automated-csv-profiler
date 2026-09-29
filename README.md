@@ -188,4 +188,4 @@ No API keys, passwords, tokens, or private credentials are stored in the reposit
 
 ## Video submission
 
-The recording itself is not stored in the repository. After the 5–7 minute screencast is uploaded to YouTube, Google Drive, or OneDrive, its accessible share URL should be placed in `video/video_link.txt` before the final repository ZIP is submitted.
+The recording itself is not stored in the repository. The 5–7 screencast is uploaded to Google Drive, its accessible share URL should be placed in `video/video_link.txt`.
