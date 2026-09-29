@@ -1,0 +1,7 @@
+- Data quality: `sex` has the most missing values with 11 missing rows (3.2%), while no column reaches the configured 30% high-missingness threshold.
+- Distribution: `bill_length_mm` has a median of 44.45, with Q1 = 39.225 and Q3 = 48.5, and the 1.5×IQR rule flags 0 potential outliers.
+- Categorical pattern: `species` contains 3 observed categories, and `Adelie` is the most frequent with 152 rows (44.2% of all rows).
+- Relationship: `flipper_length_mm` and `body_mass_g` have the largest absolute Pearson correlation among eligible numeric measures, r = 0.871; this is an association and does not establish causation.
+- Data-quality caution: the `sex` column is flagged by the sensitive-field name heuristic, but that heuristic alone cannot determine whether a field is actually sensitive in context.
+- Limitation: the profile describes only the rows and columns present in the CSV; without an external schema or data dictionary, meanings, units, valid ranges, sampling design, and representativeness cannot be verified.
+- Follow-up question: does the relationship between `flipper_length_mm` and `body_mass_g` remain similar within the major categorical groups in the dataset?

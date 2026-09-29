@@ -1,0 +1,7 @@
+- Data quality: all 105 rows are complete across the 7 columns with respect to pandas-recognized missing values, although undocumented sentinel values could still exist.
+- Distribution: `GOOG` has a median of 1.036, Q1 = 0.993, Q3 = 1.095, and ranges from 0.889 to 1.227; the 1.5×IQR rule flags 0 potential outliers.
+- Categorical analysis was skipped because no categorical or Boolean field was inferred in this dataset.
+- Relationship: `GOOG` and `AAPL` have the largest absolute Pearson correlation among eligible numeric measures, r = 0.834; this does not establish causation.
+- Data quality: no duplicate rows or constant columns were detected by the automated checks.
+- Limitation: without an external schema or data dictionary, the profiler cannot verify field meanings, units, valid ranges, sampling design, or representativeness from the CSV alone.
+- Follow-up question: is the association between `GOOG` and `AAPL` stable across different ordered portions of the dataset, such as different time windows represented by the date field?

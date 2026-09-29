@@ -1,0 +1,354 @@
+{
+  "dataset": {
+    "filename": "dataset_b_stocks.csv",
+    "rows": 105,
+    "columns": 7,
+    "column_names": [
+      "date",
+      "GOOG",
+      "AAPL",
+      "AMZN",
+      "FB",
+      "NFLX",
+      "MSFT"
+    ]
+  },
+  "configuration": {
+    "high_missing_threshold_percentage": 30.0,
+    "outlier_rule": "1.5 x IQR",
+    "max_category_values_shown": 10,
+    "max_plots": 8
+  },
+  "column_profiles": [
+    {
+      "column": "date",
+      "pandas_dtype": "object",
+      "inferred_technical_type": "date-like text",
+      "probable_role": "Date-like field",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 105,
+      "unique_ratio": 1.0,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    },
+    {
+      "column": "GOOG",
+      "pandas_dtype": "float64",
+      "inferred_technical_type": "numeric",
+      "probable_role": "Numeric measure",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 104,
+      "unique_ratio": 0.990476,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    },
+    {
+      "column": "AAPL",
+      "pandas_dtype": "float64",
+      "inferred_technical_type": "numeric",
+      "probable_role": "Numeric measure",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 105,
+      "unique_ratio": 1.0,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    },
+    {
+      "column": "AMZN",
+      "pandas_dtype": "float64",
+      "inferred_technical_type": "numeric",
+      "probable_role": "Numeric measure",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 105,
+      "unique_ratio": 1.0,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    },
+    {
+      "column": "FB",
+      "pandas_dtype": "float64",
+      "inferred_technical_type": "numeric",
+      "probable_role": "Numeric measure",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 105,
+      "unique_ratio": 1.0,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    },
+    {
+      "column": "NFLX",
+      "pandas_dtype": "float64",
+      "inferred_technical_type": "numeric",
+      "probable_role": "Numeric measure",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 105,
+      "unique_ratio": 1.0,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    },
+    {
+      "column": "MSFT",
+      "pandas_dtype": "float64",
+      "inferred_technical_type": "numeric",
+      "probable_role": "Numeric measure",
+      "non_missing_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 103,
+      "unique_ratio": 0.980952,
+      "mixed_or_inconsistent": false,
+      "notes": ""
+    }
+  ],
+  "data_quality": {
+    "duplicate_rows": 0,
+    "duplicate_percentage": 0.0,
+    "constant_columns": [],
+    "high_missing_columns": [],
+    "mixed_or_inconsistent_type_columns": [],
+    "identifier_or_high_cardinality_columns": [],
+    "potentially_sensitive_fields": [],
+    "sensitive_field_disclaimer": "Sensitive-field detection is heuristic. No warning does not prove that a dataset is safe, and a warning can be a false positive without semantic context."
+  },
+  "numeric_statistics": {
+    "GOOG": {
+      "valid_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum": 0.8886892896888904,
+      "maximum": 1.2265044859331442,
+      "mean": 1.0462059136048643,
+      "median": 1.0363716889645844,
+      "mode": null,
+      "standard_deviation": 0.07777583318187084,
+      "q1": 0.992923504040418,
+      "q3": 1.095188886079836,
+      "iqr": 0.10226538203941804,
+      "outlier_lower_bound": 0.839525430981291,
+      "outlier_upper_bound": 1.2485869591389631,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "AAPL": {
+      "valid_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum": 0.8471999714285714,
+      "maximum": 1.6779999657142857,
+      "mean": 1.1385360556190478,
+      "median": 1.0954285542857145,
+      "mode": null,
+      "standard_deviation": 0.18210881676257212,
+      "q1": 1.00040004,
+      "q3": 1.236000017142857,
+      "iqr": 0.23559997714285696,
+      "outlier_lower_bound": 0.6470000742857145,
+      "outlier_upper_bound": 1.5893999828571423,
+      "outlier_count": 3,
+      "outlier_percentage": 2.857
+    },
+    "AMZN": {
+      "valid_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum": 1.0,
+      "maximum": 1.637494456642517,
+      "mean": 1.393822068838919,
+      "median": 1.420277551536714,
+      "mode": null,
+      "standard_deviation": 0.14079627613928072,
+      "q1": 1.3040906767647622,
+      "q3": 1.491701504811883,
+      "iqr": 0.1876108280471207,
+      "outlier_lower_bound": 1.022674434694081,
+      "outlier_upper_bound": 1.7731177468825638,
+      "outlier_count": 1,
+      "outlier_percentage": 0.952
+    },
+    "FB": {
+      "valid_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum": 0.668718185644586,
+      "maximum": 1.12357503483302,
+      "mean": 0.9451212162327117,
+      "median": 0.9599678310954936,
+      "mode": null,
+      "standard_deviation": 0.10335025496416285,
+      "q1": 0.8795289843340972,
+      "q3": 1.0168584099483515,
+      "iqr": 0.13732942561425432,
+      "outlier_lower_bound": 0.6735348459127157,
+      "outlier_upper_bound": 1.222852548369733,
+      "outlier_count": 1,
+      "outlier_percentage": 0.952
+    },
+    "NFLX": {
+      "valid_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum": 1.0,
+      "maximum": 1.9576645850358447,
+      "mean": 1.5405590371517246,
+      "median": 1.5608837620628662,
+      "mode": null,
+      "standard_deviation": 0.20050792726095162,
+      "q1": 1.398876103650743,
+      "q3": 1.7016048311442251,
+      "iqr": 0.302728727493482,
+      "outlier_lower_bound": 0.9447830124105201,
+      "outlier_upper_bound": 2.155697922384448,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "MSFT": {
+      "valid_count": 105,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum": 0.9885474319413214,
+      "maximum": 1.8024719740906685,
+      "mean": 1.3180589260425406,
+      "median": 1.242431086462613,
+      "mode": null,
+      "standard_deviation": 0.22066248213759931,
+      "q1": 1.1428733270694336,
+      "q3": 1.5435990692006107,
+      "iqr": 0.4007257421311772,
+      "outlier_lower_bound": 0.5417847138726678,
+      "outlier_upper_bound": 2.1446876823973766,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    }
+  },
+  "categorical_statistics": {},
+  "relationships": {
+    "included_numeric_columns": [
+      "GOOG",
+      "AAPL",
+      "AMZN",
+      "FB",
+      "NFLX",
+      "MSFT"
+    ],
+    "correlation_matrix": {
+      "GOOG": {
+        "GOOG": 1.0,
+        "AAPL": 0.8336288321641488,
+        "AMZN": 0.5567020093933521,
+        "FB": 0.6331690443207865,
+        "NFLX": 0.14025421326460627,
+        "MSFT": 0.7470286586970516
+      },
+      "AAPL": {
+        "GOOG": 0.8336288321641488,
+        "AAPL": 1.0,
+        "AMZN": 0.5608766790927867,
+        "FB": 0.49349794014531667,
+        "NFLX": 0.04951894727287605,
+        "MSFT": 0.7867705210131112
+      },
+      "AMZN": {
+        "GOOG": 0.5567020093933521,
+        "AAPL": 0.5608766790927867,
+        "AMZN": 1.0,
+        "FB": 0.34142989894605147,
+        "NFLX": 0.6199458066529416,
+        "MSFT": 0.6608961983152759
+      },
+      "FB": {
+        "GOOG": 0.6331690443207865,
+        "AAPL": 0.49349794014531667,
+        "AMZN": 0.34142989894605147,
+        "FB": 1.0,
+        "NFLX": 0.26566275521390703,
+        "MSFT": 0.4722271954088248
+      },
+      "NFLX": {
+        "GOOG": 0.14025421326460627,
+        "AAPL": 0.04951894727287605,
+        "AMZN": 0.6199458066529416,
+        "FB": 0.26566275521390703,
+        "NFLX": 1.0,
+        "MSFT": 0.07953248192734359
+      },
+      "MSFT": {
+        "GOOG": 0.7470286586970516,
+        "AAPL": 0.7867705210131112,
+        "AMZN": 0.6608961983152759,
+        "FB": 0.4722271954088248,
+        "NFLX": 0.07953248192734359,
+        "MSFT": 1.0
+      }
+    },
+    "strongest_positive": {
+      "column_1": "GOOG",
+      "column_2": "AAPL",
+      "correlation": 0.8336288321641488
+    },
+    "strongest_negative": null,
+    "strongest_absolute": {
+      "column_1": "GOOG",
+      "column_2": "AAPL",
+      "correlation": 0.8336288321641488
+    },
+    "skipped_reason": null
+  },
+  "visualizations": [
+    {
+      "file": "plot_01_histogram_goog.png",
+      "title": "Distribution of GOOG",
+      "reason": "A histogram is appropriate for showing the shape and spread of a numeric measure."
+    },
+    {
+      "file": "plot_02_boxplot_goog.png",
+      "title": "Boxplot of GOOG",
+      "reason": "A boxplot summarizes median, quartiles, and potential 1.5×IQR outliers."
+    },
+    {
+      "file": "plot_03_correlation_heatmap.png",
+      "title": "Correlation Matrix of Numeric Measures",
+      "reason": "A heatmap summarizes pairwise linear relationships among suitable numeric measures; correlation is not causation."
+    },
+    {
+      "file": "plot_04_scatter_goog_aapl.png",
+      "title": "AAPL vs GOOG",
+      "reason": "This pair has the largest absolute Pearson correlation among eligible numeric measures (r=0.834)."
+    },
+    {
+      "file": "plot_05_time_goog_by_date.png",
+      "title": "GOOG over date",
+      "reason": "A line plot is appropriate for showing a numeric measure across an ordered date field."
+    }
+  ],
+  "skipped_visualizations": [
+    "Missing-value bar chart skipped because no columns contain missing values.",
+    "Categorical frequency chart skipped because no categorical or Boolean field was available.",
+    "Numeric-by-category plot skipped because no categorical field with 2–8 levels was available."
+  ],
+  "verified_insights": [
+    "Data quality: all 105 rows are complete across the 7 columns with respect to pandas-recognized missing values; this does not rule out undocumented sentinel codes.",
+    "Distribution: `GOOG` has median 1.036, Q1 0.993, Q3 1.095, and ranges from 0.889 to 1.227. The 1.5×IQR rule flags 0 values (0.0% of valid observations) as potential outliers.",
+    "Categorical pattern: no categorical or Boolean field was inferred, so category-frequency analysis was skipped.",
+    "Relationship: `GOOG` and `AAPL` have the largest absolute Pearson correlation among eligible numeric measures (r=0.834). This describes linear association only and does not establish causation.",
+    "Limitation: this automated profile describes the 105 rows and 7 columns present in `dataset_b_stocks.csv` only. Without an external schema or data dictionary, field meaning, units, valid ranges, sampling design, and representativeness cannot be verified from the CSV alone.",
+    "Further investigation: examine whether the association between `GOOG` and `AAPL` is stable across ordered portions of the dataset, such as different time windows when an ordered date field is available.",
+    "Additional quality finding: no duplicate rows or constant columns were detected by the automated checks."
+  ],
+  "llm": {
+    "provider": "manual",
+    "model": "ChatGPT GPT-5.6 Sol",
+    "status": "ok"
+  }
+}

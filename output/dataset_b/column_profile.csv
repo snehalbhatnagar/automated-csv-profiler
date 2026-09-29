@@ -1,0 +1,8 @@
+column,pandas_dtype,inferred_technical_type,probable_role,non_missing_count,missing_count,missing_percentage,unique_values,unique_ratio,mixed_or_inconsistent,notes
+date,object,date-like text,Date-like field,105,0,0.0,105,1.0,False,
+GOOG,float64,numeric,Numeric measure,105,0,0.0,104,0.990476,False,
+AAPL,float64,numeric,Numeric measure,105,0,0.0,105,1.0,False,
+AMZN,float64,numeric,Numeric measure,105,0,0.0,105,1.0,False,
+FB,float64,numeric,Numeric measure,105,0,0.0,105,1.0,False,
+NFLX,float64,numeric,Numeric measure,105,0,0.0,105,1.0,False,
+MSFT,float64,numeric,Numeric measure,105,0,0.0,103,0.980952,False,

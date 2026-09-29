@@ -1,0 +1,9 @@
+column,pandas_dtype,inferred_technical_type,probable_role,non_missing_count,missing_count,missing_percentage,unique_values,unique_ratio,mixed_or_inconsistent,notes
+species,object,text,Categorical attribute,344,0,0.0,3,0.008721,False,
+island,object,text,Categorical attribute,344,0,0.0,3,0.008721,False,
+bill_length_mm,float64,numeric,Numeric measure,342,2,0.581,164,0.479532,False,
+bill_depth_mm,float64,numeric,Numeric measure,342,2,0.581,80,0.233918,False,
+flipper_length_mm,float64,numeric,Numeric measure,342,2,0.581,55,0.160819,False,
+body_mass_g,float64,numeric,Numeric measure,342,2,0.581,94,0.274854,False,
+sex,object,text,Categorical attribute,333,11,3.198,2,0.006006,False,
+year,int64,integer,Date-like field,344,0,0.0,3,0.008721,False,

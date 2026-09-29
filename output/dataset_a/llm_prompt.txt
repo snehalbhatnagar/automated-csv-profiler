@@ -1,0 +1,249 @@
+You are writing a concise evidence-based narrative for an automated CSV profiling report.
+All calculations have already been completed by Python. You MUST use only the verified evidence below.
+Do not calculate or invent statistics, units, field meanings, causes, or sampling claims.
+Do not claim correlation is causation. If a field meaning is unclear, say so.
+Return 5-8 concise bullet points. Include at least one data-quality point, one distribution point, one categorical point when available, one relationship point when available, one limitation/bias warning, and one follow-up question. Quantitative statements must reuse values already present below.
+
+VERIFIED PYTHON EVIDENCE:
+{
+  "dataset": {
+    "filename": "dataset_a_penguins.csv",
+    "rows": 344,
+    "columns": 8,
+    "column_names": [
+      "species",
+      "island",
+      "bill_length_mm",
+      "bill_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g",
+      "sex",
+      "year"
+    ]
+  },
+  "data_quality": {
+    "duplicate_rows": 0,
+    "duplicate_percentage": 0.0,
+    "constant_columns": [],
+    "high_missing_columns": [],
+    "mixed_or_inconsistent_type_columns": [],
+    "identifier_or_high_cardinality_columns": [],
+    "potentially_sensitive_fields": [
+      {
+        "column": "sex",
+        "reason": "column-name heuristic"
+      }
+    ],
+    "sensitive_field_disclaimer": "Sensitive-field detection is heuristic. No warning does not prove that a dataset is safe, and a warning can be a false positive without semantic context."
+  },
+  "numeric_statistics": {
+    "bill_length_mm": {
+      "valid_count": 342,
+      "missing_count": 2,
+      "missing_percentage": 0.581,
+      "minimum": 32.1,
+      "maximum": 59.6,
+      "mean": 43.9219298245614,
+      "median": 44.45,
+      "mode": 41.1,
+      "standard_deviation": 5.4595837139265315,
+      "q1": 39.225,
+      "q3": 48.5,
+      "iqr": 9.274999999999999,
+      "outlier_lower_bound": 25.312500000000004,
+      "outlier_upper_bound": 62.412499999999994,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "bill_depth_mm": {
+      "valid_count": 342,
+      "missing_count": 2,
+      "missing_percentage": 0.581,
+      "minimum": 13.1,
+      "maximum": 21.5,
+      "mean": 17.151169590643274,
+      "median": 17.3,
+      "mode": 17.0,
+      "standard_deviation": 1.9747931568167814,
+      "q1": 15.6,
+      "q3": 18.7,
+      "iqr": 3.0999999999999996,
+      "outlier_lower_bound": 10.95,
+      "outlier_upper_bound": 23.349999999999998,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "flipper_length_mm": {
+      "valid_count": 342,
+      "missing_count": 2,
+      "missing_percentage": 0.581,
+      "minimum": 172.0,
+      "maximum": 231.0,
+      "mean": 200.91520467836258,
+      "median": 197.0,
+      "mode": 190.0,
+      "standard_deviation": 14.061713679356886,
+      "q1": 190.0,
+      "q3": 213.0,
+      "iqr": 23.0,
+      "outlier_lower_bound": 155.5,
+      "outlier_upper_bound": 247.5,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "body_mass_g": {
+      "valid_count": 342,
+      "missing_count": 2,
+      "missing_percentage": 0.581,
+      "minimum": 2700.0,
+      "maximum": 6300.0,
+      "mean": 4201.754385964912,
+      "median": 4050.0,
+      "mode": 3800.0,
+      "standard_deviation": 801.9545356980955,
+      "q1": 3550.0,
+      "q3": 4750.0,
+      "iqr": 1200.0,
+      "outlier_lower_bound": 1750.0,
+      "outlier_upper_bound": 6550.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    }
+  },
+  "categorical_statistics": {
+    "species": {
+      "unique_categories": 3,
+      "most_frequent": [
+        "Adelie"
+      ],
+      "top_frequency": 152,
+      "top_values": [
+        {
+          "value": "Adelie",
+          "count": 152,
+          "percentage_of_non_missing": 44.186,
+          "percentage_of_all_rows": 44.186
+        },
+        {
+          "value": "Gentoo",
+          "count": 124,
+          "percentage_of_non_missing": 36.047,
+          "percentage_of_all_rows": 36.047
+        },
+        {
+          "value": "Chinstrap",
+          "count": 68,
+          "percentage_of_non_missing": 19.767,
+          "percentage_of_all_rows": 19.767
+        }
+      ]
+    },
+    "island": {
+      "unique_categories": 3,
+      "most_frequent": [
+        "Biscoe"
+      ],
+      "top_frequency": 168,
+      "top_values": [
+        {
+          "value": "Biscoe",
+          "count": 168,
+          "percentage_of_non_missing": 48.837,
+          "percentage_of_all_rows": 48.837
+        },
+        {
+          "value": "Dream",
+          "count": 124,
+          "percentage_of_non_missing": 36.047,
+          "percentage_of_all_rows": 36.047
+        },
+        {
+          "value": "Torgersen",
+          "count": 52,
+          "percentage_of_non_missing": 15.116,
+          "percentage_of_all_rows": 15.116
+        }
+      ]
+    },
+    "sex": {
+      "unique_categories": 2,
+      "most_frequent": [
+        "male"
+      ],
+      "top_frequency": 168,
+      "top_values": [
+        {
+          "value": "male",
+          "count": 168,
+          "percentage_of_non_missing": 50.45,
+          "percentage_of_all_rows": 48.837
+        },
+        {
+          "value": "female",
+          "count": 165,
+          "percentage_of_non_missing": 49.55,
+          "percentage_of_all_rows": 47.965
+        }
+      ]
+    }
+  },
+  "relationships": {
+    "included_numeric_columns": [
+      "bill_length_mm",
+      "bill_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g"
+    ],
+    "correlation_matrix": {
+      "bill_length_mm": {
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.2350528703555336,
+        "flipper_length_mm": 0.6561813407464264,
+        "body_mass_g": 0.5951098244376273
+      },
+      "bill_depth_mm": {
+        "bill_length_mm": -0.2350528703555336,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.5838512164654143,
+        "body_mass_g": -0.47191562118606745
+      },
+      "flipper_length_mm": {
+        "bill_length_mm": 0.6561813407464264,
+        "bill_depth_mm": -0.5838512164654143,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.8712017673060111
+      },
+      "body_mass_g": {
+        "bill_length_mm": 0.5951098244376273,
+        "bill_depth_mm": -0.47191562118606745,
+        "flipper_length_mm": 0.8712017673060111,
+        "body_mass_g": 1.0
+      }
+    },
+    "strongest_positive": {
+      "column_1": "flipper_length_mm",
+      "column_2": "body_mass_g",
+      "correlation": 0.8712017673060111
+    },
+    "strongest_negative": {
+      "column_1": "bill_depth_mm",
+      "column_2": "flipper_length_mm",
+      "correlation": -0.5838512164654143
+    },
+    "strongest_absolute": {
+      "column_1": "flipper_length_mm",
+      "column_2": "body_mass_g",
+      "correlation": 0.8712017673060111
+    },
+    "skipped_reason": null
+  },
+  "verified_insights": [
+    "Data quality: the largest missingness occurs in `sex` with 11 missing rows (3.2%); no column reaches the 30% high-missingness threshold.",
+    "Distribution: `bill_length_mm` has median 44.45, Q1 39.225, Q3 48.5, and ranges from 32.1 to 59.6. The 1.5×IQR rule flags 0 values (0.0% of valid observations) as potential outliers.",
+    "Categorical pattern: `species` has 3 observed categories; `Adelie` is the most frequent with 152 rows (44.2% of all rows).",
+    "Relationship: `flipper_length_mm` and `body_mass_g` have the largest absolute Pearson correlation among eligible numeric measures (r=0.871). This describes linear association only and does not establish causation.",
+    "Limitation: this automated profile describes the 344 rows and 8 columns present in `dataset_a_penguins.csv` only. Without an external schema or data dictionary, field meaning, units, valid ranges, sampling design, and representativeness cannot be verified from the CSV alone.",
+    "Further investigation: examine whether the association between `flipper_length_mm` and `body_mass_g` remains similar within major categories rather than relying only on the overall correlation.",
+    "Additional quality finding: no duplicate rows or constant columns were detected by the automated checks."
+  ]
+}
